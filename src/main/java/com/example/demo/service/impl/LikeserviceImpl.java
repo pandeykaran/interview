@@ -31,5 +31,9 @@ public class LikeserviceImpl implements LikeService {
 
         return LikeConverter.entityToResponse(likeRepository.save(LikeConverter.requestToEntity(request)));
     }
+
+    public void foo(){
+        System.out.println("hello");
+    }
     
 }
